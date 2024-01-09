@@ -15,24 +15,24 @@
 
             int[] numbers = new int[count];
             Random rnd = new Random();
-            int num;
+            int c;
             for (int i = 0; i < count; i++)
             {
-                num = rnd.Next(a, b);
+                c = rnd.Next(a, b);
                 if (i == 0)
                 {
-                    numbers[i] = num;
+                    numbers[i] = c;
                 }
                 for (int j = 0; j < i; j++)
                 {
-                    if (numbers[j] == num)
+                    if (numbers[j] == c)
                     {
                         i--;
                         break;
                     }
                     else
                     {
-                        numbers[i] = num;
+                        numbers[i] = c;
                     }
                 }
             }
